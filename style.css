@@ -1,0 +1,178 @@
+/* 
+ * Estilos para o Desafio Matemágica
+ * Criado para EscuderoDevWeb-Designer
+ */
+
+/* Estilos gerais da página */
+body {
+    /* Gradiente de fundo roxo para azul */
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    margin: 0;
+    /* Centraliza o container na tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evita barras de rolagem com o nome flutuante */
+}
+
+/* Container principal com fundo transparente e efeito de blur */
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); /* Efeito de vidro fosco */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    z-index: 1; /* Garante que o container fique acima do fundo */
+}
+
+/* Estilos dos títulos */
+h1 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 2.2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+}
+
+h2 {
+    color: #ffe600; /* Amarelo para contraste */
+    margin-top: 0;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+/* Assinatura do criador */
+.signature {
+    font-size: 0.9em;
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Área do jogo */
+.game-area {
+    margin-top: 30px;
+}
+
+/* Estilos para cada passo do jogo */
+.step {
+    display: none; /* Esconde todos os passos por padrão */
+    margin-bottom: 25px;
+    animation: fadeIn 0.5s; /* Animação de entrada */
+}
+
+/* Mostra apenas o passo ativo */
+.step.active {
+    display: block;
+}
+
+/* Estilo das instruções */
+.instruction {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* Botões com efeito de hover */
+button {
+    background-color: #ffe600;
+    color: #333;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease; /* Transição suave para o efeito hover */
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de elevação no hover */
+button:hover {
+    background-color: #ffd000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Caixa do resultado com animação de pulso */
+.result-box {
+    font-size: 2em;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    animation: pulse 1.5s infinite; /* Animação de pulsação contínua */
+}
+
+/* Estilo do número do resultado */
+.result-number {
+    color: #ffe600;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* Botão para reiniciar (vermelho) */
+.restart-btn {
+    background-color: #ff5e3a;
+    margin-top: 25px;
+}
+
+.restart-btn:hover {
+    background-color: #ff4424;
+}
+
+/* Animação de fade in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Animação de pulso para o resultado */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Estilo dos confetes */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f00;
+    border-radius: 50%;
+}
+
+/* Mensagem para LinkedIn */
+.linkedin-msg {
+    margin-top: 20px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Estilo para o nome flutuante */
+#floating-name {
+    position: fixed;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    color: transparent;
+    background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 0; /* Fica abaixo do container */
+    user-select: none;
+    pointer-events: none; /* Garante que não interfira nos cliques */
+    white-space: nowrap;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+}

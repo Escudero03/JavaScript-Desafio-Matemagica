@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Matemágica - EscuderoDevWeb-Designer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Desafio Matemágica</h1>
+        <h2>Vou adivinhar o seu pensamento!</h2>
+        <div class="signature">por EscuderoDevWeb-Designer</div>
+        
+        <div class="game-area">
+            <!-- Tela inicial -->
+            <div class="step active" id="step-start">
+                <div class="instruction">
+                    Vou adivinhar o resultado final de uma sequência de cálculos, independentemente do número que você escolher!
+                </div>
+                <button id="start-btn">Iniciar Desafio</button>
+            </div>
+            
+            <!-- Passo 1: Escolher número -->
+            <div class="step" id="step-1">
+                <div class="instruction">
+                    Pense em um número entre 1 e 100.<br>
+                    <small>(Não precisa me dizer qual é)</small>
+                </div>
+                <button id="next-1">Já pensei!</button>
+            </div>
+            
+            <!-- Passo 2: Dobrar o número -->
+            <div class="step" id="step-2">
+                <div class="instruction">
+                    Agora dobre esse número.<br>
+                    <small>(Multiplique por 2)</small>
+                </div>
+                <button id="next-2">Pronto</button>
+            </div>
+            
+            <!-- Passo 3: Somar valor aleatório -->
+            <div class="step" id="step-3">
+                <div class="instruction">
+                    Agora some <span id="soma-valor-display">50</span> ao resultado anterior.
+                </div>
+                <button id="next-3">Já somei</button>
+            </div>
+            
+            <!-- Passo 4: Dividir por 2 -->
+            <div class="step" id="step-4">
+                <div class="instruction">
+                    Agora divida o resultado por 2.
+                </div>
+                <button id="next-4">Já dividi</button>
+            </div>
+            
+            <!-- Passo 5: Subtrair o número original -->
+            <div class="step" id="step-5">
+                <div class="instruction">
+                    Por último, desse valor, subtraia o número original em que você pensou inicialmente.
+                </div>
+                <button id="next-5">Já subtraí</button>
+            </div>
+            
+            <!-- Resultado final -->
+            <div class="step" id="step-result">
+                <div class="instruction">
+                    ✨ O resultado final é... ✨
+                </div>
+                <div class="result-box">
+                    <span class="result-number" id="result-value">25</span>
+                </div>
+                <div class="linkedin-msg">
+                    Se você ficou surpreso, responda no LinkedIn como adivinhou e descubra o segredo!
+                </div>
+                <button id="restart" class="restart-btn">Jogar novamente</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
