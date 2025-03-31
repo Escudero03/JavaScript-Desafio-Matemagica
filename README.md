@@ -1,6 +1,6 @@
 # 🧮 Desafio Matemágica 🔮
 
-![HTML5, CSS3 e JavaScript](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXB1NnM2N3V1MHZ4OWdzNmVrOG5reXRncWdtYTNlcTUydnhybm5yeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fuJPZBIIqzz1KdpMbR/giphy.gif)
+[🧮 Experimente o Desafio Matemágica Agora!](https://escudero03.github.io/JavaScript-Desafio-Matemagica/)
 
 <!-- Substitua pelo seu screenshot -->
 ![Screenshot do Projeto](coloque_aqui_seu_screenshot.png)
