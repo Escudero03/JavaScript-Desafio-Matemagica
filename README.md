@@ -58,7 +58,8 @@ O truque matemático por trás do jogo segue este princípio:
 
 2. Abra o arquivo `index.html` em seu navegador
 
-3. Alternativa: Acesse a [versão online](https://seu-link-aqui.com)
+3. Alternativa: Acesse a [versão online](https://escudero03.github.io/JavaScript-Desafio-Matemagica/)
+)
 
 ---
 
