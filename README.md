@@ -1,9 +1,11 @@
 # 🧮 Desafio Matemágica 🔮
 
-[🧮 Experimente o Desafio Matemágica Agora!](https://escudero03.github.io/JavaScript-Desafio-Matemagica/)
 
 <!-- Substitua pelo seu screenshot -->
-![Screenshot do Projeto](coloque_aqui_seu_screenshot.png)
+![Screenshot do Projeto](matemagica-img.png)
+
+[🧮 Experimente o Desafio Matemágica Agora!](https://escudero03.github.io/JavaScript-Desafio-Matemagica/)
+
 
 ## 📝 Descrição
 
@@ -44,7 +46,6 @@ O truque matemático por trás do jogo segue este princípio:
 4. Divide por 2: `(2x + n)/2 = x + n/2`
 5. Subtrai o número original: `x + n/2 - x = n/2`
 
-O resultado final é sempre a metade do valor somado, independentemente do número inicial escolhido!
 
 ---
 
